@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — ESHOP</title>
+  <meta name="description" content="Get in touch with the ESHOP team. We're here to help with orders, returns, partnerships, and anything else you need.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+
+  <!-- ============ Navigation ============ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="ESHOP home">
+        <span class="nav__brand-icon">&#128722;</span>
+        E<span>SHOP</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="products.html" class="nav__link">Shop</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link active">Contact</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="nav__cart" aria-label="Shopping cart">
+          &#128722;
+          <span class="nav__cart-count" data-cart-count>0</span>
+        </button>
+        <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile" role="menu">
+      <a href="index.html" class="nav__link" role="menuitem">Home</a>
+      <a href="products.html" class="nav__link" role="menuitem">Shop</a>
+      <a href="about.html" class="nav__link" role="menuitem">About</a>
+      <a href="contact.html" class="nav__link active" role="menuitem">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ============ Page Header ============ -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Get in Touch</h1>
+      <p class="page-header__breadcrumb">
+        <a href="index.html">Home</a> / Contact
+      </p>
+    </div>
+  </header>
+
+  <!-- ============ Contact ============ -->
+  <section class="contact">
+    <div class="container">
+      <div class="contact__grid">
+
+        <!-- Contact Info -->
+        <div>
+          <div class="section-header" style="text-align:left;margin-bottom:var(--sp-xl)">
+            <span class="section-label">&#9679; Reach Out</span>
+            <h2 class="section-title" style="text-align:left">We'd Love to Hear From You</h2>
+            <p class="section-subtitle" style="text-align:left;margin-left:0">Whether you have a question about orders, returns, or partnerships — our team is ready to help.</p>
+          </div>
+
+          <div class="contact__info-card reveal">
+            <div class="contact__info-icon">&#128205;</div>
+            <div>
+              <h3 class="contact__info-title">Visit Us</h3>
+              <p class="contact__info-text">123 Commerce Street<br>New York, NY 10001</p>
+            </div>
+          </div>
+
+          <div class="contact__info-card reveal reveal-delay-1">
+            <div class="contact__info-icon">&#128222;</div>
+            <div>
+              <h3 class="contact__info-title">Call Us</h3>
+              <p class="contact__info-text">+1 (555) 123-4567<br>Mon-Fri, 9am - 6pm EST</p>
+            </div>
+          </div>
+
+          <div class="contact__info-card reveal reveal-delay-2">
+            <div class="contact__info-icon">&#9993;</div>
+            <div>
+              <h3 class="contact__info-title">Email Us</h3>
+              <p class="contact__info-text">hello@eshop.com<br>support@eshop.com</p>
+            </div>
+          </div>
+
+          <div class="contact__info-card reveal reveal-delay-3">
+            <div class="contact__info-icon">&#128172;</div>
+            <div>
+              <h3 class="contact__info-title">Live Chat</h3>
+              <p class="contact__info-text">Available 24/7 for instant support<br>Click the chat icon on any page</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact__form reveal" data-form>
+          <h3 style="font-family:var(--ff-heading);font-size:var(--fs-xl);font-weight:var(--fw-bold);margin-bottom:var(--sp-lg)">Send a Message</h3>
+
+          <div class="form-group">
+            <label for="contact-name">Full Name *</label>
+            <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-email">Email Address *</label>
+            <input type="email" id="contact-email" name="email" placeholder="john@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-subject">Subject</label>
+            <select id="contact-subject" name="subject">
+              <option value="">Select a topic...</option>
+              <option value="order">Order Inquiry</option>
+              <option value="return">Returns & Exchanges</option>
+              <option value="shipping">Shipping Question</option>
+              <option value="partnership">Partnership</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message">Message *</label>
+            <textarea id="contact-message" name="message" placeholder="Tell us how we can help..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg" style="width:100%">Send Message</button>
+
+          <div class="form-ok">&#10003; Thanks! Your message has been sent. We'll get back to you within 24 hours.</div>
+          <div class="form-err">&#10007; Please fill in all required fields correctly.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Map / Location ============ -->
+  <section class="features" aria-label="Office location">
+    <div class="container">
+      <div class="features__grid">
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">&#128666;</div>
+          <h3 class="feature-card__title">Same-Day Dispatch</h3>
+          <p class="feature-card__desc">Orders placed before 2pm EST ship the same business day from our NYC warehouse.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-card__icon">&#128274;</div>
+          <h3 class="feature-card__title">Secure Checkout</h3>
+          <p class="feature-card__desc">Every transaction is encrypted end-to-end. We never store your card details.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-card__icon">&#128260;</div>
+          <h3 class="feature-card__title">30-Day Returns</h3>
+          <p class="feature-card__desc">Changed your mind? Return any item within 30 days for a full refund.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-card__icon">&#128172;</div>
+          <h3 class="feature-card__title">Expert Support</h3>
+          <p class="feature-card__desc">Real people who know our products. No bots, no scripts — just genuine help.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">E<span>SHOP</span></div>
+          <p class="footer__brand-desc">Your destination for curated products, fresh deals, and a shopping experience designed around you.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Instagram">&#9737;</a>
+            <a href="#" class="footer__social" aria-label="Twitter">&#120143;</a>
+            <a href="#" class="footer__social" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social" aria-label="Pinterest">&#119817;</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Shop</h4>
+          <div class="footer__links">
+            <a href="products.html" class="footer__link">All Products</a>
+            <a href="products.html" class="footer__link">New Arrivals</a>
+            <a href="products.html" class="footer__link">Best Sellers</a>
+            <a href="products.html" class="footer__link">Sale</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Company</h4>
+          <div class="footer__links">
+            <a href="about.html" class="footer__link">About Us</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="#" class="footer__link">Careers</a>
+            <a href="#" class="footer__link">Press</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Support</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Help Center</a>
+            <a href="#" class="footer__link">Shipping Info</a>
+            <a href="#" class="footer__link">Returns</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> ESHOP. All rights reserved.</span>
+        <div class="footer__payments">
+          <img src="assets/img/payment-method.png" alt="Accepted payment methods">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-toast" aria-live="polite">
+    <span class="cart-toast__icon">&#10003;</span>
+    <span class="cart-toast__name">Product</span> added to cart
+  </div>
+
+  <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
