@@ -6,6 +6,10 @@ A premium, framework-free e-commerce storefront built with semantic HTML, CSS cu
 
 ---
 
+## 📸 Screenshot
+
+![Homepage Preview](screenshot.png)
+
 ## Pages
 
 | Page | File | Description |
