@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — ESHOP</title>
+  <meta name="description" content="Learn about ESHOP's mission to bring you curated products, unbeatable deals, and a shopping experience designed around you.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+
+  <!-- ============ Navigation ============ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="ESHOP home">
+        <span class="nav__brand-icon">&#128722;</span>
+        E<span>SHOP</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="products.html" class="nav__link">Shop</a>
+        <a href="about.html" class="nav__link active">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="nav__cart" aria-label="Shopping cart">
+          &#128722;
+          <span class="nav__cart-count" data-cart-count>0</span>
+        </button>
+        <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__mobile" role="menu">
+      <a href="index.html" class="nav__link" role="menuitem">Home</a>
+      <a href="products.html" class="nav__link" role="menuitem">Shop</a>
+      <a href="about.html" class="nav__link active" role="menuitem">About</a>
+      <a href="contact.html" class="nav__link" role="menuitem">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ============ Page Header ============ -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">About ESHOP</h1>
+      <p class="page-header__breadcrumb">
+        <a href="index.html">Home</a> / About
+      </p>
+    </div>
+  </header>
+
+  <!-- ============ Our Story ============ -->
+  <section class="about-story">
+    <div class="container">
+      <div class="about-story__grid">
+        <div class="about-story__img reveal">
+          <img src="assets/img/slider-1.jpg" alt="Our curated product collection">
+        </div>
+        <div class="about-story__content reveal reveal-delay-1">
+          <span class="section-label">&#9679; Our Story</span>
+          <h2>We Believe Shopping Should Feel <em style="color:var(--accent);font-style:normal;">Effortless</em></h2>
+          <p>ESHOP was founded with a simple idea: online shopping should be enjoyable, trustworthy, and accessible to everyone. We curate products from the brands you love and emerging designers you'll discover here first.</p>
+          <p>Every product in our catalog is hand-selected for quality, value, and style. We partner directly with manufacturers to cut out the middleman, passing those savings straight to you.</p>
+          <p>From everyday essentials to statement pieces, we're building the store we always wished existed. Welcome to ESHOP.</p>
+          <a href="products.html" class="btn btn--primary" style="margin-top:var(--sp-lg)">Start Shopping</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Stats ============ -->
+  <section class="stats-bar" aria-label="Company statistics">
+    <div class="container">
+      <div class="stats-bar__grid">
+        <div class="reveal">
+          <div class="stat-item__number" data-count="15000">0</div>
+          <div class="stat-item__label">Happy Customers</div>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="stat-item__number" data-count="500">0</div>
+          <div class="stat-item__label">Products Listed</div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="stat-item__number" data-count="50">0</div>
+          <div class="stat-item__label">Brand Partners</div>
+        </div>
+        <div class="reveal reveal-delay-3">
+          <div class="stat-item__number" data-count="98">0</div>
+          <div class="stat-item__label">% Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Values ============ -->
+  <section class="features" aria-label="Our values">
+    <div class="container">
+      <div class="section-header reveal" style="color:var(--clr-white)">
+        <span class="section-label" style="color:var(--accent)">&#9679; What We Stand For</span>
+        <h2 class="section-title" style="color:var(--clr-white)">Our Values</h2>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">&#9733;</div>
+          <h3 class="feature-card__title">Quality First</h3>
+          <p class="feature-card__desc">Every product passes our quality check before it reaches your doorstep. We never compromise on what matters.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-card__icon">&#127793;</div>
+          <h3 class="feature-card__title">Sustainability</h3>
+          <p class="feature-card__desc">Eco-friendly packaging and carbon-neutral shipping. Shopping responsibly shouldn't be harder.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-card__icon">&#129309;</div>
+          <h3 class="feature-card__title">Community</h3>
+          <p class="feature-card__desc">We support local makers and small businesses. Every purchase fuels independent creators worldwide.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-card__icon">&#128640;</div>
+          <h3 class="feature-card__title">Innovation</h3>
+          <p class="feature-card__desc">Constantly evolving our platform to make finding and buying what you love faster and more intuitive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Team / Brand Promise ============ -->
+  <section class="categories" style="background:var(--clr-soft-pink)">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">&#9679; Behind the Scenes</span>
+        <h2 class="section-title">Our Curated Departments</h2>
+        <p class="section-subtitle">Each category is managed by experts passionate about their craft</p>
+      </div>
+
+      <div class="categories__grid">
+        <a href="products.html" class="category-card reveal reveal-delay-1">
+          <img src="assets/img/category-1.jpg" alt="Fashion department">
+          <div class="category-card__overlay">
+            <span class="category-card__name">Fashion</span>
+            <span class="category-card__count">Style Experts</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-2">
+          <img src="assets/img/category-2.jpg" alt="Electronics department">
+          <div class="category-card__overlay">
+            <span class="category-card__name">Electronics</span>
+            <span class="category-card__count">Tech Specialists</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-3">
+          <img src="assets/img/category-3.jpg" alt="Home department">
+          <div class="category-card__overlay">
+            <span class="category-card__name">Home &amp; Living</span>
+            <span class="category-card__count">Design Curators</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-4">
+          <img src="assets/img/category-4.jpg" alt="Accessories department">
+          <div class="category-card__overlay">
+            <span class="category-card__name">Accessories</span>
+            <span class="category-card__count">Detail Obsessed</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter__inner reveal">
+        <div class="newsletter__text">
+          <h2 class="newsletter__title">Ready to Explore?</h2>
+          <p class="newsletter__desc">Browse our full collection and discover products you'll love. New arrivals drop every week.</p>
+        </div>
+        <div>
+          <a href="products.html" class="btn btn--primary btn--lg">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">E<span>SHOP</span></div>
+          <p class="footer__brand-desc">Your destination for curated products, fresh deals, and a shopping experience designed around you.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Instagram">&#9737;</a>
+            <a href="#" class="footer__social" aria-label="Twitter">&#120143;</a>
+            <a href="#" class="footer__social" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social" aria-label="Pinterest">&#119817;</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Shop</h4>
+          <div class="footer__links">
+            <a href="products.html" class="footer__link">All Products</a>
+            <a href="products.html" class="footer__link">New Arrivals</a>
+            <a href="products.html" class="footer__link">Best Sellers</a>
+            <a href="products.html" class="footer__link">Sale</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Company</h4>
+          <div class="footer__links">
+            <a href="about.html" class="footer__link">About Us</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="#" class="footer__link">Careers</a>
+            <a href="#" class="footer__link">Press</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Support</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Help Center</a>
+            <a href="#" class="footer__link">Shipping Info</a>
+            <a href="#" class="footer__link">Returns</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> ESHOP. All rights reserved.</span>
+        <div class="footer__payments">
+          <img src="assets/img/payment-method.png" alt="Accepted payment methods">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-toast" aria-live="polite">
+    <span class="cart-toast__icon">&#10003;</span>
+    <span class="cart-toast__name">Product</span> added to cart
+  </div>
+
+  <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Stats counter animation
+    (function () {
+      var counters = document.querySelectorAll('[data-count]');
+      if (!counters.length) return;
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          var el = entry.target;
+          var target = parseInt(el.getAttribute('data-count'), 10);
+          var suffix = el.closest('.stat-item__number') && el.textContent.indexOf('%') === -1 && target < 1000 ? '+' : '';
+          var duration = 1800;
+          var start = performance.now();
+          function step(now) {
+            var progress = Math.min((now - start) / duration, 1);
+            var eased = 1 - Math.pow(1 - progress, 3);
+            var current = Math.floor(eased * target);
+            el.textContent = current.toLocaleString() + (target === 98 ? '%' : '+');
+            if (progress < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+          observer.unobserve(el);
+        });
+      }, { threshold: 0.5 });
+      counters.forEach(function (c) { observer.observe(c); });
+    })();
+  </script>
+</body>
+</html>

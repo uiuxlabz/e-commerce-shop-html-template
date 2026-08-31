@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESHOP — Premium E-Commerce Store</title>
+  <meta name="description" content="ESHOP — Discover curated fashion, electronics, and lifestyle products at unbeatable prices. Fast shipping, secure checkout, and deals you'll love.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/base.css">
+</head>
+<body>
+
+  <!-- ============ Navigation ============ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="ESHOP home">
+        <span class="nav__brand-icon">&#128722;</span>
+        E<span>SHOP</span>
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="products.html" class="nav__link">Shop</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+
+      <div class="nav__actions">
+        <button class="nav__cart" aria-label="Shopping cart">
+          &#128722;
+          <span class="nav__cart-count" data-cart-count>0</span>
+        </button>
+        <button class="nav__burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="nav__mobile" role="menu">
+      <a href="index.html" class="nav__link active" role="menuitem">Home</a>
+      <a href="products.html" class="nav__link" role="menuitem">Shop</a>
+      <a href="about.html" class="nav__link" role="menuitem">About</a>
+      <a href="contact.html" class="nav__link" role="menuitem">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" aria-label="Featured showcase">
+    <div class="hero__slider">
+      <div class="hero__slide active">
+        <img src="assets/img/slider-1.jpg" alt="New arrivals collection showcase">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/img/slider-2.jpg" alt="Summer sale collection">
+      </div>
+      <div class="hero__slide">
+        <img src="assets/img/slider-3.jpg" alt="Premium lifestyle products">
+      </div>
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <span class="hero__badge">&#9733; New Season Drop</span>
+      <h1 class="hero__title">Discover What's <em>Trending</em> Now</h1>
+      <p class="hero__desc">Curated products, unbeatable prices, and lightning-fast delivery. Upgrade your lifestyle with ESHOP's handpicked collection.</p>
+      <div class="hero__actions">
+        <a href="products.html" class="btn btn--primary btn--lg">Browse Collection</a>
+        <a href="#categories" class="btn btn--white btn--lg">Shop by Category</a>
+      </div>
+    </div>
+
+    <div class="hero__dots" role="tablist" aria-label="Slider controls">
+      <button class="hero__dot active" role="tab" aria-label="Slide 1"></button>
+      <button class="hero__dot" role="tab" aria-label="Slide 2"></button>
+      <button class="hero__dot" role="tab" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- ============ Categories ============ -->
+  <section id="categories" class="categories" aria-label="Shop by category">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">&#9679; Browse</span>
+        <h2 class="section-title">Shop by Category</h2>
+        <p class="section-subtitle">Find exactly what you need across our curated departments</p>
+      </div>
+
+      <div class="categories__grid">
+        <a href="products.html" class="category-card reveal reveal-delay-1">
+          <img src="assets/img/category-1.jpg" alt="Fashion collection">
+          <div class="category-card__overlay">
+            <span class="category-card__name">Fashion</span>
+            <span class="category-card__count">128 Products</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-2">
+          <img src="assets/img/category-2.jpg" alt="Electronics collection">
+          <div class="category-card__overlay">
+            <span class="category-card__name">Electronics</span>
+            <span class="category-card__count">96 Products</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-3">
+          <img src="assets/img/category-3.jpg" alt="Home & Living collection">
+          <div class="category-card__overlay">
+            <span class="category-card__name">Home &amp; Living</span>
+            <span class="category-card__count">74 Products</span>
+          </div>
+        </a>
+        <a href="products.html" class="category-card reveal reveal-delay-4">
+          <img src="assets/img/category-4.jpg" alt="Accessories collection">
+          <div class="category-card__overlay">
+            <span class="category-card__name">Accessories</span>
+            <span class="category-card__count">215 Products</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Featured Products ============ -->
+  <section class="products" aria-label="Featured products">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">&#9679; Featured</span>
+        <h2 class="section-title">Best Sellers This Week</h2>
+        <p class="section-subtitle">Handpicked products our customers can't stop buying</p>
+      </div>
+
+      <div class="products__filters reveal" role="tablist" aria-label="Product categories">
+        <button class="products__filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="products__filter" data-filter="fashion" role="tab" aria-selected="false">Fashion</button>
+        <button class="products__filter" data-filter="electronics" role="tab" aria-selected="false">Electronics</button>
+        <button class="products__filter" data-filter="accessories" role="tab" aria-selected="false">Accessories</button>
+      </div>
+
+      <div class="products__grid">
+
+        <!-- Product 1 -->
+        <article class="product-card reveal" data-category="fashion">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/product-1.png" alt="Premium cotton hoodie" loading="lazy">
+            <div class="product-card__tag">
+              <span class="tag tag--sale">-30%</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__action-btn" data-add="Premium Cotton Hoodie" aria-label="Add to cart">&#128722;</button>
+              <button class="product-card__action-btn" aria-label="Add to wishlist">&#9825;</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Fashion</span>
+            <h3 class="product-card__name">Premium Cotton Hoodie</h3>
+            <div class="product-card__rating">
+              <span class="product-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="product-card__rating-count">(42)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$59.99</span>
+              <span class="product-card__price-original">$85.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card reveal" data-category="electronics">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/product-2.png" alt="Wireless noise-cancelling headphones" loading="lazy">
+            <div class="product-card__tag">
+              <span class="tag tag--new">New</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__action-btn" data-add="Wireless Headphones" aria-label="Add to cart">&#128722;</button>
+              <button class="product-card__action-btn" aria-label="Add to wishlist">&#9825;</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Electronics</span>
+            <h3 class="product-card__name">Wireless Noise-Cancelling Headphones</h3>
+            <div class="product-card__rating">
+              <span class="product-card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              <span class="product-card__rating-count">(87)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$129.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card reveal" data-category="accessories">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/product-3.png" alt="Leather crossbody bag" loading="lazy">
+            <div class="product-card__tag">
+              <span class="tag tag--hot">Hot</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__action-btn" data-add="Leather Crossbody Bag" aria-label="Add to cart">&#128722;</button>
+              <button class="product-card__action-btn" aria-label="Add to wishlist">&#9825;</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Accessories</span>
+            <h3 class="product-card__name">Leather Crossbody Bag</h3>
+            <div class="product-card__rating">
+              <span class="product-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="product-card__rating-count">(63)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$79.95</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card reveal" data-category="fashion">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/product-4.png" alt="Slim-fit denim jeans" loading="lazy">
+            <div class="product-card__tag">
+              <span class="tag tag--sale">-25%</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__action-btn" data-add="Slim-Fit Denim Jeans" aria-label="Add to cart">&#128722;</button>
+              <button class="product-card__action-btn" aria-label="Add to wishlist">&#9825;</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Fashion</span>
+            <h3 class="product-card__name">Slim-Fit Denim Jeans</h3>
+            <div class="product-card__rating">
+              <span class="product-card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              <span class="product-card__rating-count">(35)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$44.99</span>
+              <span class="product-card__price-original">$59.99</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card reveal" data-category="electronics">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/product-5.png" alt="Smart fitness tracker" loading="lazy">
+            <div class="product-card__tag">
+              <span class="tag tag--new">New</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__action-btn" data-add="Smart Fitness Tracker" aria-label="Add to cart">&#128722;</button>
+              <button class="product-card__action-btn" aria-label="Add to wishlist">&#9825;</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Electronics</span>
+            <h3 class="product-card__name">Smart Fitness Tracker</h3>
+            <div class="product-card__rating">
+              <span class="product-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="product-card__rating-count">(128)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$99.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card reveal" data-category="accessories">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/product-6.png" alt="Minimalist wristwatch" loading="lazy">
+            <div class="product-card__tag">
+              <span class="tag tag--sale">-15%</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__action-btn" data-add="Minimalist Wristwatch" aria-label="Add to cart">&#128722;</button>
+              <button class="product-card__action-btn" aria-label="Add to wishlist">&#9825;</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Accessories</span>
+            <h3 class="product-card__name">Minimalist Wristwatch</h3>
+            <div class="product-card__rating">
+              <span class="product-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="product-card__rating-count">(56)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$119.00</span>
+              <span class="product-card__price-original">$140.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="product-card reveal" data-category="fashion">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/product-7.png" alt="Classic wool overcoat" loading="lazy">
+            <div class="product-card__actions">
+              <button class="product-card__action-btn" data-add="Classic Wool Overcoat" aria-label="Add to cart">&#128722;</button>
+              <button class="product-card__action-btn" aria-label="Add to wishlist">&#9825;</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Fashion</span>
+            <h3 class="product-card__name">Classic Wool Overcoat</h3>
+            <div class="product-card__rating">
+              <span class="product-card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              <span class="product-card__rating-count">(29)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$189.00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="product-card reveal" data-category="electronics">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/product-8.png" alt="Portable bluetooth speaker" loading="lazy">
+            <div class="product-card__tag">
+              <span class="tag tag--hot">Hot</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__action-btn" data-add="Bluetooth Speaker" aria-label="Add to cart">&#128722;</button>
+              <button class="product-card__action-btn" aria-label="Add to wishlist">&#9825;</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Electronics</span>
+            <h3 class="product-card__name">Portable Bluetooth Speaker</h3>
+            <div class="product-card__rating">
+              <span class="product-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span class="product-card__rating-count">(201)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$69.95</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 9 -->
+        <article class="product-card reveal" data-category="accessories">
+          <div class="product-card__img-wrap">
+            <img src="assets/img/product-9.png" alt="Canvas weekend duffel" loading="lazy">
+            <div class="product-card__tag">
+              <span class="tag tag--sale">-20%</span>
+            </div>
+            <div class="product-card__actions">
+              <button class="product-card__action-btn" data-add="Canvas Weekend Duffel" aria-label="Add to cart">&#128722;</button>
+              <button class="product-card__action-btn" aria-label="Add to wishlist">&#9825;</button>
+            </div>
+          </div>
+          <div class="product-card__info">
+            <span class="product-card__category">Accessories</span>
+            <h3 class="product-card__name">Canvas Weekend Duffel</h3>
+            <div class="product-card__rating">
+              <span class="product-card__stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+              <span class="product-card__rating-count">(44)</span>
+            </div>
+            <div class="product-card__price">
+              <span class="product-card__price-current">$95.00</span>
+              <span class="product-card__price-original">$119.00</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center;margin-top:var(--sp-2xl)" class="reveal">
+        <a href="products.html" class="btn btn--primary btn--lg">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Brands ============ -->
+  <section class="brands" aria-label="Trusted brands">
+    <div class="container">
+      <div class="brands__track reveal">
+        <div class="brands__item"><img src="assets/img/brand-1.png" alt="Brand partner 1"></div>
+        <div class="brands__item"><img src="assets/img/brand-2.png" alt="Brand partner 2"></div>
+        <div class="brands__item"><img src="assets/img/brand-3.png" alt="Brand partner 3"></div>
+        <div class="brands__item"><img src="assets/img/brand-4.png" alt="Brand partner 4"></div>
+        <div class="brands__item"><img src="assets/img/brand-5.png" alt="Brand partner 5"></div>
+        <div class="brands__item"><img src="assets/img/brand-6.png" alt="Brand partner 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Features ============ -->
+  <section class="features" aria-label="Why shop with us">
+    <div class="container">
+      <div class="features__grid">
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">&#128666;</div>
+          <h3 class="feature-card__title">Free Shipping</h3>
+          <p class="feature-card__desc">Free delivery on all orders over $50. No hidden fees, no surprises.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-card__icon">&#128274;</div>
+          <h3 class="feature-card__title">Secure Payment</h3>
+          <p class="feature-card__desc">256-bit SSL encryption. Your payment details are always safe with us.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-card__icon">&#128260;</div>
+          <h3 class="feature-card__title">Easy Returns</h3>
+          <p class="feature-card__desc">30-day hassle-free returns. Not satisfied? Send it back, no questions asked.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-card__icon">&#128172;</div>
+          <h3 class="feature-card__title">24/7 Support</h3>
+          <p class="feature-card__desc">Friendly customer support around the clock via chat, email, or phone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Newsletter ============ -->
+  <section class="newsletter" aria-label="Newsletter signup">
+    <div class="container">
+      <div class="newsletter__inner reveal">
+        <div class="newsletter__text">
+          <h2 class="newsletter__title">Stay in the Loop</h2>
+          <p class="newsletter__desc">Get exclusive deals, new arrivals, and insider-only discounts delivered to your inbox.</p>
+        </div>
+        <form class="newsletter__form" onsubmit="event.preventDefault();this.reset();alert('Thanks for subscribing!');">
+          <input type="email" class="newsletter__input" placeholder="Enter your email" required aria-label="Email address">
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">E<span>SHOP</span></div>
+          <p class="footer__brand-desc">Your destination for curated products, fresh deals, and a shopping experience designed around you.</p>
+          <div class="footer__socials">
+            <a href="#" class="footer__social" aria-label="Instagram">&#9737;</a>
+            <a href="#" class="footer__social" aria-label="Twitter">&#120143;</a>
+            <a href="#" class="footer__social" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social" aria-label="Pinterest">&#119817;</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Shop</h4>
+          <div class="footer__links">
+            <a href="products.html" class="footer__link">All Products</a>
+            <a href="products.html" class="footer__link">New Arrivals</a>
+            <a href="products.html" class="footer__link">Best Sellers</a>
+            <a href="products.html" class="footer__link">Sale</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Company</h4>
+          <div class="footer__links">
+            <a href="about.html" class="footer__link">About Us</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+            <a href="#" class="footer__link">Careers</a>
+            <a href="#" class="footer__link">Press</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Support</h4>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Help Center</a>
+            <a href="#" class="footer__link">Shipping Info</a>
+            <a href="#" class="footer__link">Returns</a>
+            <a href="#" class="footer__link">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> ESHOP. All rights reserved.</span>
+        <div class="footer__payments">
+          <img src="assets/img/payment-method.png" alt="Accepted payment methods">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Toast -->
+  <div class="cart-toast" aria-live="polite">
+    <span class="cart-toast__icon">&#10003;</span>
+    <span class="cart-toast__name">Product</span> added to cart
+  </div>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
